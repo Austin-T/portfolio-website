@@ -1,15 +1,12 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Prologue by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -20,9 +17,9 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
+							<span class="image avatar48"><img src="images/avatar2.png" alt="" /></span>
+							<h1 id="title">Austin Tralnberg</h1>
+							<p>Software Engineer</p>
 						</div>
 
 					<!-- Nav -->
@@ -41,11 +38,9 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/Austin-T" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/austin-t/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:atralnbe@ualberta.ca" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -57,34 +52,45 @@
 
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
-						<div class="container">
+						<canvas id="nodeCanvas"></canvas>
+						<div class="container center-vertical">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Hi, <br>I'm Austin Tralnberg, <br>a Software Engineer.</h2>
+								<p>See what I can do for you</p>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly">View My Projects</a>
+								<a href="#contact" class="button scrolly">Contact Me</a>
 							</footer>
 
 						</div>
 					</section>
+					<script src="./assets/js/floatingNodes.js"></script>
+					<script>
+						if (nayukiCanvas.isSupported()) {
+							let canvasElm = document.getElementById('nodeCanvas');
+							canvasElm.style.width ='100%';
+  							canvasElm.style.height='100%';
+							// ...then set the internal size to match
+							canvasElm.width  = canvasElm.offsetWidth;
+							canvasElm.height = canvasElm.offsetHeight;
+							let myCanvas = nayukiCanvas(canvasElm).start();
+						}
+					</script>
 
 				<!-- Portfolio -->
-					<section id="portfolio" class="two">
+					<section id="portfolio" class="two dark">
 						<div class="container">
 
 							<header>
 								<h2>Portfolio</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>As a young software engineer, I am working on new projects every day to enhance my skill set.
+								Check out some of my latest and greatest projects down below!
+							</p>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
@@ -135,7 +141,7 @@
 					</section>
 
 				<!-- About Me -->
-					<section id="about" class="three">
+					<section id="about" class="three dark">
 						<div class="container">
 
 							<header>
@@ -155,17 +161,17 @@
 					</section>
 
 				<!-- Contact -->
-					<section id="contact" class="four">
+					<section id="contact" class="four dark">
 						<div class="container">
 
 							<header>
-								<h2>Contact</h2>
+								<h2>Contact Me</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<p>It would be a pleasure to connect with you and discuss new opportunities.
+								Send me an message by filling out the form below, or send an email to atralnbe@ualberta.ca.
+								All the best!
+							</p>
 
 							<form method="post" action="#">
 								<div class="row">
@@ -190,7 +196,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Austin Tralnberg. 2020</li>
 					</ul>
 
 			</div>
