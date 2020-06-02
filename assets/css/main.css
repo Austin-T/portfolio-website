@@ -1847,6 +1847,10 @@ input, select, textarea {
 
 /* Form */
 
+	form {
+		width: 50%
+	}
+
 	form label {
 		display: block;
 		text-align: left;
@@ -2252,6 +2256,7 @@ input, select, textarea {
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: left;
 			background-image: url("images/overlay.png");
+			min-height: 105vh;
 		}
 
 
@@ -2286,10 +2291,11 @@ input, select, textarea {
 				background-position: center center;
 			}
 
+			/* Home Page */
 			#main > section.one {
 				background-color: rgb(39, 43, 42);
 				background-image: url("../../images/banner.jpg");
-				height: 100vh;
+				height: 105vh;
 			}
 
 			.nodeCanvas {
@@ -2301,16 +2307,68 @@ input, select, textarea {
 				position: absolute;
 			}
 
+			/* Portfolio Page */
 			#main > section.two {
 				background-color: rgb(39, 43, 42);
 				padding: 2em 0 2em 0;
 			}
 
+			.allProjects {
+				width: 100%;
+				/* height: 500px; */
+				display: block;
+			}
+
+			.project {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 100%;
+				height: 400px;
+				margin: 2em 0 2em 0;
+			}
+
+			.projectImage {
+				height: 100%;
+				width: 35%;
+			}
+
+			.projectImage > img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.projectText {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 100%;
+				width: 60%;
+			}
+
+			.projectButtons {
+				display: block;
+				justify-content: right;
+				width: 100%;
+				height: 50px;
+				margin-bottom: 20px;
+			}
+
+			.codeButton {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				width: 100%;
+				height: 100%;
+			}
+
+			/* About Page */
 			#main > section.three {
 				background-color: rgb(30, 32, 32);
 				padding: 2em 0 2em 0;
 			}
 
+			/* Contact Page */
 			#main > section.four {
 				background-color: rgb(39, 43, 42);
 				padding: 2em 0 2em 0;
