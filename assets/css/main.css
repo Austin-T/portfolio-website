@@ -2368,6 +2368,15 @@ input, select, textarea {
 				padding: 2em 0 2em 0;
 			}
 
+			#sphereCanvas {
+				border: 1px solid red;
+			}
+
+			.brainImage {
+				width: 10px;
+				height: 10px;
+			}
+
 			/* Contact Page */
 			#main > section.four {
 				background-color: rgb(39, 43, 42);
