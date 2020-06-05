@@ -6,7 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -50,14 +50,16 @@
 		<!-- Main -->
 			<div id="main">
 
+				<canvas id="nodeCanvas"></canvas>
+
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
-						<canvas id="nodeCanvas"></canvas>
+						
 						<div class="container center-vertical">
 
 							<header>
-								<h2 class="alt">Hi, <br>I'm Austin Tralnberg, <br>a Software Engineer.</h2>
-								<p>See what I can do for you</p>
+								<h2 class="alt">Austin Tralnberg, <br>Software Engineer.</h2>
+								<p>See what I can do for you.</p>
 							</header>
 
 							<footer>
@@ -67,18 +69,6 @@
 
 						</div>
 					</section>
-					<script src="./assets/js/floatingNodes.js"></script>
-					<script>
-						if (nayukiCanvas.isSupported()) {
-							let canvasElm = document.getElementById('nodeCanvas');
-							canvasElm.style.width ='100%';
-  							canvasElm.style.height='100%';
-							// ...then set the internal size to match
-							canvasElm.width  = canvasElm.offsetWidth;
-							canvasElm.height = canvasElm.offsetHeight;
-							let myCanvas = nayukiCanvas(canvasElm).start();
-						}
-					</script>
 
 				<!-- Portfolio -->
 					<section id="portfolio" class="two dark">
@@ -137,7 +127,6 @@
 								</div>
 							</div> -->
 							<div class="allProjects">
-
 								<div class="project">
 									<div class="projectImage">
 										<img src="./images/testgif.gif">
@@ -152,13 +141,15 @@
 												Data is organized in easy-to-navigate dataase system or displayed on
 												interactive, live maps. This project is in use by Alberta's Ministry of
 												Environment and Parks.
+												<br>
 												Technologies: Python, JavaScript, HTML5, CSS, MySQL, ArcGIS, ArcGIS Hub.
 											</p>
 										</div>
 										<div class="projectButtons">
-											<a class="button" id="demoButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See a Demo</a>
-											<a class="button" id="codeButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">Code is Protected</a>
+											<a class="button" id="demoButton1">See a Demo</a>
+											<a class="deadButton" id="codeButton">Code is Protected</a>
 										</div>
+										<div id="demoBox">This is the demo box</div>
 									</div>
 								</div>
 
@@ -168,7 +159,7 @@
 									</div>
 									<div class="projectText">
 										<div class="projectTitle">
-											<h2>Dynamic Pathfinder (Visualization Tool)</h2>
+											<h2>Dynamic Pathfinder</h2>
 										</div>
 										<div class="projectBody">
 											<p>This web application allows a user to visualize industry-standard
@@ -177,13 +168,14 @@
 												recompute the search-sppace and shortest-path. The graph can also be populated
 												with randomly-generated patterns, which may favour certain algorithms more
 												than others.
+												<br>
 												Technologies: JavaScript, HTML5, CSS.
 
 											</p>
 										</div>
 										<div class="projectButtons">
 											<a class="button" id="demoButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See a Demo</a>
-											<a class="button" id="codeButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
+											<a class="button" id="codeButton" target="_blank" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
 										</div>
 									</div>
 								</div>
@@ -201,12 +193,13 @@
 												and keras, used for the detection of human facial expressions. Expressions
 												are categorized into one of five categories with up to 91.7% accuracy
 												(tested on over 10,000 images).
+												<br>
 												Technologies: Python, TensorFlow, Keras, OpenCV, Pygame.
 											</p>
 										</div>
 										<div class="projectButtons">
 											<a class="button" id="demoButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See a Demo</a>
-											<a class="button" id="codeButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
+											<a class="button" id="codeButton" target="_blank" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
 										</div>
 									</div>
 								</div>
@@ -223,12 +216,13 @@
 											<p>This is a single-page web application to showcase my personal projects.
 												This website uses interactive JavaScript animations to capture the attention of
 												clients. Click on the demo button for recursion.
+												<br>
 												Technologies: JavaScript, HTML5, CSS.
 											</p>
 										</div>
 										<div class="projectButtons">
 											<a class="button" id="demoButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See a Demo</a>
-											<a class="button" id="codeButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
+											<a class="button" id="codeButton" target="_blank" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
 										</div>
 									</div>
 								</div>
@@ -247,12 +241,13 @@
 												At the end of the game, top-scorers have the chance to enter their name
 												into the database. This project showcases the fundamentals of object-oriented 
 												design. Watch out for Aliens!
+												<br>
 												Technologies: Python, Pygame.
 											</p>
 										</div>
 										<div class="projectButtons">
 											<a class="button" id="demoButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See a Demo</a>
-											<a class="button" id="codeButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
+											<a class="button" id="codeButton" target="_blank" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
 										</div>
 									</div>
 								</div>
@@ -269,12 +264,13 @@
 											<p>This web application allows users to create simple to complex rhythms using a 
 												loop Station. This application combnes my love for music with my love for coding!
 												Look for the on-screen animations that help your rhythm come to life.
+												<br>
 												Technologies: JavaScript, HTML5, CSS.
 											</p>
 										</div>
 										<div class="projectButtons">
 											<a class="button" id="demoButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See a Demo</a>
-											<a class="button" id="codeButton" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
+											<a class="button" id="codeButton" target="_blank" href="https://github.com/Austin-T/Facial-Expression-Classifier">See the Code</a>
 										</div>
 									</div>
 								</div>
@@ -289,18 +285,18 @@
 				<!-- About Me -->
 					<section id="about" class="three dark">
 						<div class="container">
-							<h2>My Skills</h2>
-							<p>From front-end programming in javascript to back-end engineering in C,
-								my skill set is expansive and diverse. It is my personal belief that excelence 
-								is achieved by those who take an interdisciplenary approach to problem solving.
-
-								Today, I am most focused on...
-
-							</p>
-							<canvas id="sphereCanvas" width="500px" height="500px"></canvas>
-							<img id="brainImage" src="./images/brain.png" style="display:none;">
-							<script src="assets/js/skillSphere.js"></script>
-
+							<div class="skills">
+								<div class="skillsText">
+									<h2>My Skills</h2>
+									<p>From front-end programming in javascript to back-end engineering in C,
+										my skill set is expansive and diverse. It is my personal belief that excelence 
+										is achieved by those who take an interdisciplenary approach to problem solving.
+									</p>
+								</div>
+								<canvas id="sphereCanvas" width="500px" height="500px"></canvas>
+								<img id="brainImage" src="./images/brain.png" style="display:none;">
+								<script src="assets/js/skillSphere.js"></script>
+							</div>
 						</div>
 					</section>
 					
@@ -313,9 +309,8 @@
 								<h2>Contact Me</h2>
 							</header>
 
-							<p>It would be a pleasure to connect with you and discuss new opportunities.
+							<p>Lets Connect!
 								Send me an message by filling out the form below, or send an email to atralnbe@ualberta.ca.
-								All the best!
 							</p>
 
 							<form method="post" action="#">
@@ -354,6 +349,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script src="./assets/js/floatingNodes.js"></script>
+			<script>
+				if (nayukiCanvas.isSupported()) {
+					let canvasElm = document.getElementById('nodeCanvas');
+					canvasElm.style.width ='100%';
+					canvasElm.style.height='100%';
+					// ...then set the internal size to match
+					canvasElm.width  = canvasElm.offsetWidth;
+					canvasElm.height = canvasElm.offsetHeight;
+					let myCanvas = nayukiCanvas(canvasElm).start();
+				}
+			</script>
 
 	</body>
 </html>
