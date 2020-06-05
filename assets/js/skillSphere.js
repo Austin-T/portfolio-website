@@ -1,13 +1,17 @@
 class Skill {
-    constructor(origin, title, x, y, z) {
+    constructor(origin, radius, title, x, y, z) {
         this.origin = origin;
         this.title = title;
+        this.radius = radius;
 
         this.position = {
-            x: x,
-            y: y,
-            z: z,
+            x: x * radius,
+            y: y * radius,
+            z: z * radius,
         }
+
+        this.fontMiddle = 20;
+        this.fontRange = 5;
     }
     draw(context){
         // context.fillStyle = "grey";
@@ -24,15 +28,15 @@ class Skill {
         // This function returns the appropriate font size for the word
         // such that it will appear with the correct level of depth inside
         // of the skill ball
-        let newSize = 20 + (this.position.z) / 50;
+        let newSize = this.fontMiddle + (this.position.z / this.radius) * this.fontRange;
         return String(newSize) + "px Arial";
     }
     getColor() {
         // This function returns the appropriate font color for the word
         // such that it will appear with the correct level of depth inside
         // of the skill ball
-        let newOpacity = (this.position.z / this.origin.x);
-        if (newOpacity < 0) newOpacity = 0;
+        let newOpacity = 0.5 + ((this.position.z / this.radius) / 2);
+        // if (newOpacity < 0) newOpacity = 0;
         // console.log(newOpacity.toFixed(1));
         return "rgba(250, 250, 250," + newOpacity.toFixed(3) + ")";
 
@@ -67,7 +71,7 @@ class Skill {
 const canvas = document.getElementById("sphereCanvas");
 const context = canvas.getContext("2d");
 const brainImage = document.getElementById("brainImage");
-const brainWidth = 30;
+const brainWidth = 50;
 
 let origin = {
     x: canvas.width / 2,
@@ -75,24 +79,24 @@ let origin = {
     z: 0
 }
 
-let radius = canvas.width / 3;
+let radius = canvas.width / 4;
 
 
 const skills = [
-    new Skill(origin, "JavaScript", 0.75 * radius, 0.75 * radius, 0.75 * radius),
-    new Skill(origin, "C/C++", 0.75 * radius, 0.75 * radius, -0.75 * radius),
-    new Skill(origin, "Swift", 0.75 * radius, -0.75 * radius, 0.75 * radius),
-    new Skill(origin, "RISC-V", -0.75 * radius, 0.75 * radius, 0.75 * radius),
-    new Skill(origin, "Python", -0.75 * radius, -0.75 * radius, -0.75 * radius),
-    new Skill(origin, "HTML5", 0.75 * radius, -0.75 * radius, -0.75 * radius),
-    new Skill(origin, "CSS", -0.75 * radius, -0.75 * radius, 0.75 * radius),
-    new Skill(origin, "SQL", -0.75 * radius, 0.75 * radius, -0.75 * radius),
-    new Skill(origin, "GIT", 0, 0, radius),
-    new Skill(origin, "Keras", 0, radius, 0),
-    new Skill(origin, "TensorFlow", radius, 0, 0),
-    new Skill(origin, "OpenCV", -radius, 0, 0),
-    new Skill(origin, "OpenGL", 0, -radius, 0),
-    new Skill(origin, "Linux", 0, 0, -radius),
+    new Skill(origin, radius, "JavaScript", 0.75, 0.75, 0.75),
+    new Skill(origin, radius, "C/C++", 0.75, 0.75, -0.75),
+    new Skill(origin, radius, "Swift", 0.75, -0.75, 0.75),
+    new Skill(origin, radius, "RISC-V", -0.75, 0.75, 0.75),
+    new Skill(origin, radius, "Python", -0.75, -0.75, -0.75),
+    new Skill(origin, radius, "HTML5", 0.75, -0.75, -0.75),
+    new Skill(origin, radius, "CSS", -0.75, -0.75, 0.75),
+    new Skill(origin, radius, "SQL", -0.75, 0.75, -0.75),
+    new Skill(origin, radius, "GIT", 0, 0, 1),
+    new Skill(origin, radius, "Keras", 0, 1, 0),
+    new Skill(origin, radius, "TensorFlow", 1, 0, 0),
+    new Skill(origin, radius, "OpenCV", -1, 0, 0),
+    new Skill(origin, radius, "OpenGL", 0, -1, 0),
+    new Skill(origin, radius, "Linux", 0, 0, -1)
 ];
 
 let oldCursor = {x: 1, y: 1};
