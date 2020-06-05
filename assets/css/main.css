@@ -2109,6 +2109,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 200px;
+		/* border: 1px solid green; */
 	}
 
 		#header .top {
@@ -2116,6 +2117,7 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+			/* border: 1px solid red; */
 		}
 
 		#header .bottom {
@@ -2124,6 +2126,7 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			padding: 1.5em 0 0.75em 0;
+			/* border: 1px solid yellow; */
 		}
 
 			#header .bottom > :last-child {
@@ -2149,9 +2152,11 @@ input, select, textarea {
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		margin: 0.8em 0.8em 1.5em 0.8em;
 		min-height: 48px;
 		cursor: default;
+		width: 160px;
+		/* border: 1px solid blue; */
 	}
 
 		#logo h1 {
@@ -2176,14 +2181,18 @@ input, select, textarea {
 			margin: 0 0 0.5em 0;
 			left: 0;
 			top: 0;
-			height: 130px;
-			width: 130px;
+			height: 160px;
+			width: 160px;
 		}
 
 		#logo img {
-			height: 130px;
-			width: 130px;
+			height: 160px;
+			width: 160px;
 		}
+
+	/* #nav {
+		border: 1px solid pink;
+	} */
 
 	#nav ul {
 		list-style: none;
