@@ -221,7 +221,7 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table {
+	ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
 
@@ -234,50 +234,51 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		padding: 0 2em 0 2em;
-		max-width: 100%;
-		width: 1400px;
+		/* max-width: 100%;
+		width: 1400px; */
+		width: 100%;
 		position: relative;
 	}
 
-		@media screen and (min-width: 961px) and (max-width: 1880px) {
+		/* @media screen and (min-width: 961px) and (max-width: 1880px) {
 
 			.container {
 				width: 1200px;
 			}
 
-		}
+		} */
 
-		@media screen and (min-width: 961px) and (max-width: 1620px) {
+		/* @media screen and (min-width: 961px) and (max-width: 1620px) {
 
 			.container {
 				width: 960px;
 			}
 
-		}
+		} */
 
-		@media screen and (min-width: 961px) and (max-width: 1320px) {
-
-			.container {
-				width: 100%;
-			}
-
-		}
-
-		@media screen and (max-width: 960px) {
+		/* @media screen and (min-width: 961px) and (max-width: 1320px) {
 
 			.container {
 				width: 100%;
 			}
 
-		}
+		} */
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 960px) {
 
 			.container {
 				width: 100%;
 			}
 
-		}
+		} */
+
+		/* @media screen and (max-width: 736px) {
+
+			.container {
+				width: 100%;
+			}
+
+		} */
 
 	.center-vertical {
 		margin: 0;
@@ -1985,6 +1986,7 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
+		margin: 0.5em 0.5em 0 0;
 		border: 1px solid white;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -2001,7 +2003,8 @@ input, select, textarea {
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		button:hover,
-		.button:hover {
+		.button:hover, 
+		.smallButton:hover {
 			background-color: #9ececc;
 		}
 
@@ -2009,7 +2012,8 @@ input, select, textarea {
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		button:active,
-		.button:active {
+		.button:active, 
+		.smallButton:active {
 			background-color: #7eaeac;
 		}
 
@@ -2019,6 +2023,42 @@ input, select, textarea {
 		color: rgb(75, 75, 75) !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
+		margin: 0.5em 0.5em 0 0;
+		border: 1px solid rgb(73, 73, 73);
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		/* -moz-transition: background-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out; */
+	}
+	.smallButton {
+		position: relative;
+		display: inline-block;
+		color: #fff !important;
+		text-decoration: none;
+		padding: 0.25em 0.83em 0.25em 0.83em;
+		margin: 0.5em 0.5em 0 0;
+		border: 1px solid white;
+		cursor: pointer;
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
+		-moz-transition: background-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out;
+	}
+	.smallDeadButton {
+		position: relative;
+		display: inline-block;
+		color: rgb(75, 75, 75) !important;
+		text-decoration: none;
+		padding: 0.25em 0.83em 0.25em 0.83em;
+		margin: 0.5em 0.5em 0 0;
 		border: 1px solid rgb(73, 73, 73);
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
 		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -2253,9 +2293,9 @@ input, select, textarea {
 		margin-left: 200px;
 		text-align: center;
 		background-color: black;
-		padding: 1em 0 1em 0;
+		/* padding: 2px 0 2px 0; */
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-		font-size: 0.8em;
+		font-size: 8pt;
 	}
 
 		#footer .copyright {
@@ -2285,6 +2325,7 @@ input, select, textarea {
 		top: 0;
 		left: 200px;
 		background-color: black;
+		z-index: -1;
 	}
 
 /* Main */
@@ -2329,7 +2370,7 @@ input, select, textarea {
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: left;
 			background-image: url("images/overlay.png");
-			min-height: 105vh;
+			min-height: 100vh;
 		}
 
 
@@ -2365,16 +2406,17 @@ input, select, textarea {
 			}
 
 			/* Home Page */
-			#main > section.one {
-				/* background-color: rgb(39, 43, 42); */
-				/* background-image: url("../../images/banner.jpg"); */
+			/* #main > section.one {
+				background-color: rgb(39, 43, 42);
+				background-image: url("../../images/banner.jpg");
 				height: 105vh;
-			}
+			} */
 
 			/* Portfolio Page */
 			#main > section.two {
-				background-color: rgb(39, 43, 42);
+				background-color: rgba(39, 43, 42, 0.75);
 				padding: 2em 0 2em 0;
+				z-index: 100;
 			}
 
 			.allProjects {
@@ -2384,18 +2426,24 @@ input, select, textarea {
 			}
 
 			.project {
-				display: flex;
+				/* display: flex;
 				flex-direction: row;
 				justify-content: space-between;
-				width: 100%;
-				height: 400px;
+				width: 100%; */
+				height: 300px;
 				margin: 2em 0 2em 0;
+			}
+
+			.project p {
+				font-size: 12pt;
 			}
 
 			.projectImage {
 				height: 100%;
-				width: 35%;
+				width: 300px;
 				box-shadow: 4px 4px 6px black;
+				margin-right: 0.83em;
+				float: left;
 			}
 
 			.projectImage > img {
@@ -2408,7 +2456,9 @@ input, select, textarea {
 				flex-direction: column;
 				justify-content: space-between;
 				height: 100%;
-				width: 60%;
+				width: 1000px;
+				/* border: 1px solid red; */
+				float: left;
 			}
 
 			.projectButtons {
@@ -2416,41 +2466,35 @@ input, select, textarea {
 				justify-content: right;
 				width: 100%;
 				height: 50px;
-				margin-bottom: 35px;
-			}
-
-			#demoBox {
-				display: none;
-			}
-
-			#demoButton1:hover #demoBox {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 80px;
-				height: 80px;
-				display: block;
-				border: 1px solid red;
+				margin-bottom: 0.83em;
 			}
 
 
 			/* About Page */
 			#main > section.three {
-				background-color: rgb(30, 32, 32);
+				background-color: rgba(30, 32, 32, 0.75);
 				padding: 2em 0 2em 0;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
 			}
 
-			.skills {
-				display: flex;
+			/* .skills {
+				display: inline;
 				flex-direction: row;
 				justify-content: space-between;
-			}
+			} */
 
 			.skillsText {
-				width: 40%;
+				width: 400px;
+				float: left;
+				/* border: 1px solid green; */
+				margin-right: 2.5em;
+			}
+
+			#sphereCanvas {
+				float: left;
+				/* border: 1px solid red; */
 			}
 
 			.brainImage {
@@ -2460,7 +2504,7 @@ input, select, textarea {
 
 			/* Contact Page */
 			#main > section.four {
-				background-color: rgb(39, 43, 42);
+				background-color: rgba(39, 43, 42, 0.75);
 				padding: 2em 0 2em 0;
 			}
 
@@ -2510,10 +2554,10 @@ input, select, textarea {
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transform: translateX(-275px);
-				-webkit-transform: translateX(-275px);
-				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
+				-moz-transform: translateX(-200px);
+				-webkit-transform: translateX(-200px);
+				-ms-transform: translateX(-200px);
+				transform: translateX(-200px);
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -2525,9 +2569,9 @@ input, select, textarea {
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
+				width: 200px;
 				z-index: 10002;
-				width: 275px;
+				width: 200px;
 				background: #222729 url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
@@ -2612,17 +2656,17 @@ input, select, textarea {
 					}
 
 			body.header-visible #main {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(200px);
+				-webkit-transform: translateX(200px);
+				-ms-transform: translateX(200px);
+				transform: translateX(200px);
 			}
 
 			body.header-visible #headerToggle {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(200px);
+				-webkit-transform: translateX(200px);
+				-ms-transform: translateX(200px);
+				transform: translateX(200px);
 			}
 
 			body.header-visible #header {
@@ -2636,6 +2680,12 @@ input, select, textarea {
 
 			#footer {
 				margin-left: 0;
+			}
+
+		/* Background */
+
+			#nodeCanvas {
+				left: 0;
 			}
 
 		/* Main */

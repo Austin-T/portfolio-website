@@ -10,7 +10,7 @@ class Skill {
             z: z * radius,
         }
 
-        this.fontMiddle = 20;
+        this.fontMiddle = 25;
         this.fontRange = 5;
     }
     draw(context){
@@ -73,14 +73,15 @@ const context = canvas.getContext("2d");
 const brainImage = document.getElementById("brainImage");
 const brainWidth = 50;
 
+
+
+let radius = 200;
+
 let origin = {
-    x: canvas.width / 2,
-    y: canvas.height / 2,
+    x: 300,
+    y: 300,
     z: 0
 }
-
-let radius = canvas.width / 4;
-
 
 const skills = [
     new Skill(origin, radius, "JavaScript", 0.75, 0.75, 0.75),
@@ -103,16 +104,23 @@ let oldCursor = {x: 1, y: 1};
 let newCursor = {x: 0, y: 0};
 
 canvas.addEventListener('mousemove', function(evt) {
-    // Update the positions of the old cursor and new cursor
-    oldCursor.x = newCursor.x;
-    oldCursor.y = newCursor.y;
+    // Update the positions of the old cursor and new cursor if the mouse is within
+    // 150% of the radius from the middle of the skillSphere
 
     let rect = canvas.getBoundingClientRect();
-    newCursor.x = evt.clientX - rect.left;
-    newCursor.y = evt.clientY - rect.top;
 
-    rotateY3D(newCursor.x - oldCursor.x);
-    rotateX3D(oldCursor.y - newCursor.y);
+    let widthSquared = Math.pow((evt.clientX - rect.left)- origin.x, 2);
+    let heightSquared = Math.pow((evt.clientY - rect.top) - origin.y, 2);
+    let distFromOrigin = Math.sqrt(widthSquared + heightSquared);
+
+    if (distFromOrigin < 1.5 * radius) {
+        oldCursor.x = newCursor.x;
+        oldCursor.y = newCursor.y;
+
+        newCursor.x = evt.clientX - rect.left;
+        newCursor.y = evt.clientY - rect.top;
+    }
+    
 });
 
 function rotateX3D(theta) {
