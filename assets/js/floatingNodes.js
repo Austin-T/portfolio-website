@@ -6,7 +6,7 @@
 
   var defaults = {
     extraEdges: 20,
-    nodeCount: 40,
+    nodeCount: 30,
     network: 'balanced',
     repulsion: 1,
     borderFade: -0.02,
@@ -15,7 +15,7 @@
     frameInterval: 20,
     background: ['black', 'rgb(15, 15, 15)'],
     gradient: 'radial',
-    nodeColor: '#f1f1f1',
+    nodeColor: '#8ebebc',
     edgeColor: '#b4b4b4',
     edgeSize: 0.7,
     nodeSize: 500
