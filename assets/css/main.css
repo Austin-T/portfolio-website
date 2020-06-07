@@ -2052,9 +2052,6 @@ input, select, textarea {
 		-ms-transition: background-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out;
 	}
-	.marginFull {
-		margin: 0.5em;
-	}
 	.smallDeadButton {
 		position: relative;
 		display: inline-block;
@@ -2071,6 +2068,9 @@ input, select, textarea {
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out; */
+	}
+	.marginFull {
+		margin: 0.5em;
 	}
 
 /* Item */
