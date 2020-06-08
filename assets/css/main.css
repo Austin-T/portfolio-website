@@ -292,7 +292,7 @@ input, select, textarea {
 		top: 0;
 		left: 0;
 		width: 800px;
-		transform: translateY(100%);
+		transform: translateY(50%);
 	}
 
 /* Row */
@@ -2301,7 +2301,7 @@ input, select, textarea {
 	#footer {
 		margin-left: 200px;
 		text-align: center;
-		background-color: black;
+		background-color: rgb(42, 49, 51);
 		/* padding: 2px 0 2px 0; */
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 8pt;
@@ -2381,7 +2381,7 @@ input, select, textarea {
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: left;
 			background-image: url("images/overlay.png");
-			min-height: 100vh;
+			/* min-height: 100vh; */
 		}
 
 
@@ -2417,11 +2417,10 @@ input, select, textarea {
 			}
 
 			/* Home Page */
-			/* #main > section.one {
-				background-color: rgb(39, 43, 42);
-				background-image: url("../../images/banner.jpg");
-				height: 105vh;
-			} */
+			#main > section.one {
+				height: 100vh;
+			}
+
 			#main > section.one h2{
 				animation: titleAnimation;
 				animation-duration: 1.5s;
@@ -2596,6 +2595,7 @@ input, select, textarea {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
+				height: 100vh;
 			}
 
 			/* .skills {
@@ -2605,7 +2605,7 @@ input, select, textarea {
 			} */
 
 			.skillsText {
-				width: 400px;
+				width: 600px;
 				float: left;
 				/* border: 1px solid green; */
 				margin-right: 2.5em;
@@ -2625,6 +2625,16 @@ input, select, textarea {
 			#main > section.four {
 				background-color: rgba(39, 43, 42, 0.75);
 				padding: 2em 0 2em 0;
+				height: 70vh;
+			}
+
+			#main > section.four p {
+				width: 600px;
+				float: left;
+			}
+			#main > section.four .container{
+				width: 600px;
+				float: left;
 			}
 
 /* Narrower */
