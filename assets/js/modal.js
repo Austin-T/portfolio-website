@@ -1,15 +1,11 @@
 // Outline the content to be added to the GIS Data Hub window
 let GIScontent = [
-    ["./images/python.png", "This is the first page"],
-    ["./images/swift.png", "This is the second page"],
-    ["./images/c.png", "This is the third page"]
+    ["./images/testgif.gif", "A full demo will be available by 2020-06-14"]
 ];
 
 // Outline the content to be added to the GIS Data Hub window
 let ClassifierContent = [
-    ["./images/python.png", "This is the first page"],
-    ["./images/swift.png", "This is the second page"],
-    ["./images/c.png", "This is the third page"]
+    ["./images/testgif.gif", "A full demo will be available by 2020-06-14"]
 ];
 
 // The GIS Data Hub Modal Popup Window

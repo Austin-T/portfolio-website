@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Roboto', sans-serif;
 	vertical-align: baseline;
 }
 p {
@@ -31,7 +31,7 @@ p {
 	border: 0;
 	font-size: 22px;
 	line-height: 28px;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Roboto', sans-serif;
 	vertical-align: baseline;
 }
 
@@ -103,7 +103,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		font-family: 'Roboto Mono', monospace;
+		font-family: 'Roboto', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -122,7 +122,7 @@ input, select, textarea {
 		}
 
 	input, textarea, select {
-		font-family: 'Roboto Mono', monospace;
+		font-family: 'Roboto', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -2343,31 +2343,32 @@ input, select, textarea {
 		margin-left: 200px;
 	}
 
-	#main h2{
-		animation: flyInBottom;
-		animation-duration: 1s;
-		animation-fill-mode: both;
+	#main h2 {
 		text-shadow: 3px 3px #9ececc;
-	}
-
-	#main p{
-		animation: flyInBottom;
-		animation-duration: 2s;
-		animation-delay: 2s;
-		animation-fill-mode: both;
-	}
-
-	#main a{
-		animation: flyInBottom;
-		animation-duration: 2s;
-		animation-delay: 4s;
-		animation-fill-mode: both;
 	}
 
 	@keyframes flyInBottom {
 		0%{
 			transform: translateY(100%);
 			opacity: 0;
+		}
+	}
+
+	@keyframes titleAnimation {
+		0% {
+			transform: translateY(100%);
+			opacity: 0;
+			text-shadow: none;
+		}
+		50% {
+			transform: translateY(1%);
+			text-shadow: none;
+		}
+		75% {
+			text-shadow: 5px 5px #9ececc;
+		}
+		100% {
+			text-shadow: 3px 3px #9ececc;
 		}
 	}
 
@@ -2421,9 +2422,37 @@ input, select, textarea {
 				background-image: url("../../images/banner.jpg");
 				height: 105vh;
 			} */
+			#main > section.one h2{
+				animation: titleAnimation;
+				animation-duration: 1.5s;
+				animation-fill-mode: both;
+				text-shadow: 3px 3px #9ececc;
+			}
+
+			#main > section.one p{
+				animation: flyInBottom;
+				animation-duration: 1s;
+				animation-delay: 1.5s;
+				animation-fill-mode: both;
+			}
+
+			#main > section.one a{
+				animation: flyInBottom;
+				animation-duration: 1s;
+				animation-delay: 2.5s;
+				animation-fill-mode: both;
+			}
+
 			#transitionOne {
-				background-image: linear-gradient(rgba(0, 0, 0, 0),  rgba(39, 43, 42, 0.75));
-				height: 10vh;
+				width: 100%;
+				height: 15vh;
+			}
+
+			#transitionOne > img{
+				height: 100%;
+				width: 100%;
+				opacity: 0.75;
+				filter: brightness(0.38);
 			}
 
 			/* Portfolio Page */
