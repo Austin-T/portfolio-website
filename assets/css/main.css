@@ -1,11 +1,8 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, blockquote,
@@ -22,7 +19,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	vertical-align: baseline;
 }
 p {
@@ -31,8 +28,12 @@ p {
 	border: 0;
 	font-size: 22px;
 	line-height: 28px;
-	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Roboto', sans-serif; */
 	vertical-align: baseline;
+	font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Heebo', sans-serif;
 }
 
 article, aside, details, figcaption, figure,
@@ -103,7 +104,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		font-family: 'Roboto', sans-serif;
+		/* font-family: 'Roboto', sans-serif; */
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -122,7 +123,7 @@ input, select, textarea {
 		}
 
 	input, textarea, select {
-		font-family: 'Roboto', sans-serif;
+		/* font-family: 'Roboto', sans-serif; */
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -2355,7 +2356,7 @@ input, select, textarea {
 	.coverMe.fade-in {
 		transform: scale(1);
 		transform: translateY(0%);
-		opacity: 0.85;
+		opacity: 0.90;
 		border-radius: 0%;
 
 	}
@@ -2366,9 +2367,9 @@ input, select, textarea {
 		margin-left: 200px;
 	}
 
-	#main h2 {
+	/* #main h2 {
 		text-shadow: 3px 3px #9ececc;
-	}
+	} */
 
 	@keyframes flyInBottom {
 		0%{
@@ -2377,7 +2378,7 @@ input, select, textarea {
 		}
 	}
 
-	@keyframes titleAnimation {
+	/* @keyframes titleAnimation {
 		0% {
 			transform: translateY(100%);
 			opacity: 0;
@@ -2393,7 +2394,7 @@ input, select, textarea {
 		100% {
 			text-shadow: 3px 3px #9ececc;
 		}
-	}
+	} */
 
 
 
@@ -2445,10 +2446,10 @@ input, select, textarea {
 			}
 
 			#main > section.one h2{
-				animation: titleAnimation;
+				animation: flyInBottom;
 				animation-duration: 1.5s;
 				animation-fill-mode: both;
-				text-shadow: 3px 3px #9ececc;
+				/* text-shadow: 3px 3px #9ececc; */
 			}
 
 			#main > section.one p{
@@ -2494,7 +2495,7 @@ input, select, textarea {
 
 			.projectImage {
 				height: 100%;
-				width: 300px;
+				width: 350px;
 				box-shadow: 6px 6px #9ececc;
 				margin-right: 0.83em;
 				float: left;
@@ -2524,7 +2525,7 @@ input, select, textarea {
 			}
 
 			.modal {
-				/* background-color: rgba(39, 43, 42, 0.75); */
+				background-color: rgba(39, 43, 42, 0.75);
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -2544,9 +2545,9 @@ input, select, textarea {
 				/* justify-content: space-between; */
 				position: fixed;
 				top: 10vh;
-				left: 10vw;
+				left: 20vw;
 				/* height: 800px; */
-				width: 80vw;
+				width: 60vw;
 				/* border: 1px solid green; */
 				z-index: 1;
 			}
@@ -2603,11 +2604,11 @@ input, select, textarea {
 			/* About Page */
 			#main > section.three {
 				/* background-color: rgba(39, 43, 42, 0.75); */
-				padding: 2em 0 2em 0;
+				padding: 2em 0 0 0;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
-				height: 100vh;
+				height: 90vh;
 			}
 
 			/* .skills {
