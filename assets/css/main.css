@@ -292,7 +292,7 @@ input, select, textarea {
 		top: 0;
 		left: 0;
 		width: 800px;
-		transform: translateY(50%);
+		transform: translateY(70%);
 	}
 
 /* Row */
@@ -2334,7 +2334,28 @@ input, select, textarea {
 		top: 0;
 		left: 200px;
 		background-color: black;
+		z-index: -2;
+	}
+
+	.coverMe {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
 		z-index: -1;
+		background-color: rgb(25, 25, 25);
+		opacity: 0;
+		transform: scale(0);
+		border-radius: 100%;
+		transition: all 1s ease-out;
+	}
+
+	.coverMe.fade-in {
+		transform: scale(1);
+		opacity: 0.85;
+		border-radius: 0%;
+
 	}
 
 /* Main */
@@ -2442,21 +2463,10 @@ input, select, textarea {
 				animation-fill-mode: both;
 			}
 
-			#transitionOne {
-				width: 100%;
-				height: 15vh;
-			}
-
-			#transitionOne > img{
-				height: 100%;
-				width: 100%;
-				opacity: 0.75;
-				filter: brightness(0.38);
-			}
 
 			/* Portfolio Page */
 			#main > section.two {
-				background-color: rgba(39, 43, 42, 0.75);
+				/* background-color: rgba(39, 43, 42, 0.75); */
 				padding: 2em 0 2em 0;
 				z-index: 100;
 			}
@@ -2512,7 +2522,7 @@ input, select, textarea {
 			}
 
 			.modal {
-				background-color: rgba(39, 43, 42, 0.75);
+				/* background-color: rgba(39, 43, 42, 0.75); */
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -2590,7 +2600,7 @@ input, select, textarea {
 
 			/* About Page */
 			#main > section.three {
-				background-color: rgba(39, 43, 42, 0.75);
+				/* background-color: rgba(39, 43, 42, 0.75); */
 				padding: 2em 0 2em 0;
 				display: flex;
 				flex-direction: column;
@@ -2623,7 +2633,7 @@ input, select, textarea {
 
 			/* Contact Page */
 			#main > section.four {
-				background-color: rgba(39, 43, 42, 0.75);
+				/* background-color: rgba(39, 43, 42, 0.75); */
 				padding: 2em 0 2em 0;
 				height: 70vh;
 			}
