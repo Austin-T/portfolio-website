@@ -288,12 +288,12 @@ input, select, textarea {
 		transform: translateY(-50%);
 		position: absolute;
 		width: 700px; */
-		margin: 0;
+		/* margin: 0; */
 		position: relative;
-		top: 0;
-		left: 0;
-		width: 800px;
-		transform: translateY(70%);
+		top: 30vh;
+		/* left: 0; */
+		/* width: 800px; */
+		/* transform: translateY(70%); */
 	}
 
 /* Row */
@@ -2621,11 +2621,11 @@ input, select, textarea {
 				width: 600px;
 				float: left;
 				/* border: 1px solid green; */
-				margin-right: 2.5em;
+				/* margin-right: 2.5em; */
 			}
 
 			#sphereCanvas {
-				float: left;
+				float: right;
 				/* border: 1px solid red; */
 			}
 
@@ -2643,13 +2643,155 @@ input, select, textarea {
 
 			#main > section.four p {
 				width: 600px;
-				float: left;
+				/* float: left; */
 			}
-			#main > section.four .container{
+			/* #main > section.four .container{
 				width: 600px;
 				float: left;
-			}
+			} */
 
+/* Wide */
+
+@media screen and (min-width: 961px) and (max-width: 1880px) {
+
+	/* Basic */
+
+		/* body, input, textarea, select {
+			font-size: 17pt;
+		} */
+
+	/* Header */
+
+		/* #header {
+			width: 300px;
+		} */
+
+	/* Footer */
+
+		/* #footer {
+			margin-left: 300px;
+		} */
+
+	/* Main */
+
+		/* #main {
+			margin-left: 300px;
+		} */
+		.projectText {
+			width: 900px;
+		}
+
+}
+
+/* Normal */
+
+@media screen and (min-width: 961px) and (max-width: 1620px) {
+
+	/* Main */
+
+		/* #main > section {
+			padding: 3em 0;
+		} */
+
+		/* #main section.cover {
+			padding: 5em 0;
+		} */
+		.projectText {
+			width: 600px;
+		}
+		#main > section.three {
+			height: 160vh;
+		}
+		#sphereCanvas {
+			float: left;
+		}
+
+}
+
+/* Narrow */
+
+@media screen and (min-width: 961px) and (max-width: 1300px) {
+
+	/* Basic */
+
+		/* body, input, textarea, select {
+			font-size: 16pt;
+		} */
+
+		/* .container {
+			padding: 0 2em 0 2em;
+		} */
+
+	/* Icons */
+
+		/* ul.icons li a {
+			width: 1.75em;
+		} */
+
+	/* Item */
+
+		/* .item {
+			margin-bottom: 20px;
+		} */
+
+	/* Header */
+
+		/* #header {
+			width: 20%;
+		} */
+
+		/* #logo .image {
+			position: relative;
+			margin: 0 0 0.5em 0;
+		} */
+
+		/* #nav ul li a {
+			font-size: 0.8em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		} */
+
+			/* #nav ul li a span {
+				padding-right: 2.25em;
+			} */
+
+				/* #nav ul li a span:before {
+					left: 100%;
+					margin-left: -1.25em;
+					line-height: 2.25em;
+				} */
+
+	/* Footer */
+
+		/* #footer {
+			margin-left: 20%;
+		} */
+
+	/* Main */
+
+		/* #main {
+			margin-left: 20%;
+		} */
+		.projectImage {
+			width: 600px;
+		}
+
+		.projectText{
+			margin: 0.83em 0 2em 0;
+			width: 600px;
+		}
+		.modalContent {
+			width: 80vw;
+			left: 10vw;
+		}
+		#main > section.three {
+			height: 160vh;
+		}
+		#sphereCanvas {
+			float: left;
+		}
+
+}
 /* Narrower */
 
 	#headerToggle {
@@ -2664,9 +2806,9 @@ input, select, textarea {
 				overflow-x: hidden;
 			}
 
-			body, input, textarea, select {
+			/* body, input, textarea, select {
 				font-size: 16pt;
-			}
+			} */
 
 			header br {
 				display: none;
@@ -2853,12 +2995,124 @@ input, select, textarea {
 				/* #main section.cover {
 					padding: 4em 0;
 				} */
+			.projectImage {
+				width: 600px;
+			}
+	
+			.projectText{
+				margin: 0.83em 0 2em 0;
+				width: 600px;
+			}
+			.modalContent {
+				width: 80vw;
+				left: 10vw;
+			}
+			.modalImage {
+				height: 400px;
+			}
+			#main > section.three {
+				height: 160vh;
+			}
+			#sphereCanvas {
+				float: left;
+			}
 
 	}
 
+/* Most Narrow */
+
+@media screen and (max-width: 736px) {
+
+	/* Basic */
+
+		/* body, input, textarea, select {
+			font-size: 14pt;
+		} */
+
+		h2 {
+			font-size: 1.5em;
+			letter-spacing: 0;
+			font-weight: 300;
+		}
+
+		/* .container {
+			padding: 0 15px 0 15px;
+		} */
+
+	/* List */
+
+		ul.icons a {
+			width: 2em;
+			font-size: 1.25em;
+		}
+
+	/* Main */
+
+		/* #main > section {
+			padding: 2em 0;
+		} */
+
+		/* #main section.cover {
+			padding: 4em 0em;
+		} */
+
+			/* #main section.cover header {
+				padding: 0 1em;
+			} */
+		
+		.project {
+			height: 400px;
+		}
+
+		.projectImage {
+			width: 430px;
+			height: 300px;
+		}
+
+		.projectText{
+			margin: 0.83em 0 2em 0;
+			width: 450px;
+		}
+		.modalContent {
+			width: 80vw;
+			left: 10vw;
+		}
+		.modalImage {
+			height: 300px;
+		}
+		#main > section.three {
+			height: 100vh;
+		}
+		.skillsText{
+			width: 400px;
+		}
+		#sphereCanvas {
+			display: none;
+		}
+		#main > section.four p {
+			width: 400px;
+			/* float: left; */
+		}
+
+	/* Footer */
+
+		/* #footer .copyright li {
+			display: block;
+			line-height: 1.25em;
+			border: 0;
+			padding: 0;
+			margin: 1em 0 0 0;
+		}
+
+			#footer .copyright li:first-child {
+				margin-top: 0;
+			} */
+
+}
+
 /* Mobile */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 536px) {
 
 		/* Basic */
 
@@ -2893,13 +3147,49 @@ input, select, textarea {
 				padding: 4em 0em;
 			} */
 
-				#main section.cover header {
+				/* #main section.cover header {
 					padding: 0 1em;
-				}
+				} */
+			
+			.project {
+				height: 500px;
+			}
+	
+			.projectImage {
+				width: 270px;
+				height: 300px;
+			}
+	
+			.projectText{
+				margin: 0.83em 0 6em 0;
+				width: 270px;
+			}
+
+			.modalContent {
+				width: 80vw;
+				left: 10vw;
+			}
+
+			.modalImage {
+				height: 200px;
+			}
+			#main > section.three {
+				height: 100vh;
+			}
+			.skillsText{
+				width: 300px;
+			}
+			#sphereCanvas {
+				display: none;
+			}
+			#main > section.four p {
+				width: 300px;
+				/* float: left; */
+			}
 
 		/* Footer */
 
-			#footer .copyright li {
+			/* #footer .copyright li {
 				display: block;
 				line-height: 1.25em;
 				border: 0;
@@ -2909,6 +3199,6 @@ input, select, textarea {
 
 				#footer .copyright li:first-child {
 					margin-top: 0;
-				}
+				} */
 
 	}
