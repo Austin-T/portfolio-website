@@ -1,6 +1,11 @@
 // Outline the content to be added to the GIS Data Hub window
 let GIScontent = [
-    ["./images/testgif.gif", "A full demo will be available by 2020-06-14"]
+    ["./images/searchGIS.gif", "Search through over 12,000 trusted collections of data with a keyword search, or select the most appropriate category."],
+    ["./images/filterGIS2.gif", "Filter datasets by content type, access privilege, tags, category, and date"],
+    ["./images/datasetGIS.gif", "Use a preview to examine a dateset befor you download it. If it is not what you were looking for, see closely related material."],
+    ["./images/initiativeGIS.gif", "View graphic representations of Alberta's most important data, relating to environmental initiatives. See live metrics for the most up to date stats on the health of our environment."],
+    ["./images/storymapGIS.gif", "Walk through interactive 'story maps' that combine important data sets to paint a larger picture."],
+    ["./images/dashboardsGIS.gif", "Play with interactive dashboards and maps. Find data related to a specific location or region."]
 ];
 
 // Outline the content to be added to the GIS Data Hub window
