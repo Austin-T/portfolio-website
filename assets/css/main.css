@@ -2445,11 +2445,10 @@ input, select, textarea {
 				height: 100vh;
 			}
 
-			#main > section.one h2{
+			/* #main > section.one h2{
 				animation: flyInBottom;
 				animation-duration: 1.5s;
 				animation-fill-mode: both;
-				/* text-shadow: 3px 3px #9ececc; */
 			}
 
 			#main > section.one p{
@@ -2464,7 +2463,7 @@ input, select, textarea {
 				animation-duration: 1s;
 				animation-delay: 2.5s;
 				animation-fill-mode: both;
-			}
+			} */
 
 
 			/* Portfolio Page */
