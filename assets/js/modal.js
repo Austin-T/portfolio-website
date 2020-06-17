@@ -10,7 +10,7 @@ let GIScontent = [
 
 // Outline the content to be added to the GIS Data Hub window
 let ClassifierContent = [
-    ["./images/testgif.gif", "A full demo will be available by 2020-06-14"]
+    ["./images/testgif.gif", "A full demo will be available soon"]
 ];
 
 // The GIS Data Hub Modal Popup Window
