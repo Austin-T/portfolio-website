@@ -8,14 +8,16 @@ let GIScontent = [
     ["./images/dashboardsGIS.gif", "Play with interactive dashboards and maps. Find data related to a specific location or region."]
 ];
 
-// Outline the content to be added to the GIS Data Hub window
+// Outline the content to be added to the Facial Expression Classifier window
 let ClassifierContent = [
     ["./images/testgif.gif", "A full demo will be available soon"]
 ];
 
 // The GIS Data Hub Modal Popup Window
 let gis = {
-    open: document.getElementById("GISDemo"),
+    open1: document.getElementById("GISDemo"),
+    open2: document.getElementById("GISDemoI"),
+    open3: document.getElementById("GISDemoT"),
     close: document.getElementById("exitGIS"),
     page: document.getElementById("pageGIS"),
     previous: document.getElementById("previousGIS"),
@@ -29,7 +31,9 @@ let gis = {
 
 // The Facial Recognition Classifiier Popup Window
 let classifier = {
-    open: document.getElementById("ClassifierDemo"),
+    open1: document.getElementById("ClassifierDemo"),
+    open2: document.getElementById("ClassifierDemoI"),
+    open3: document.getElementById("ClassifierDemoT"),
     close: document.getElementById("exitClassifier"),
     page: document.getElementById("pageClassifier"),
     previous: document.getElementById("previousClassifier"),
@@ -46,8 +50,18 @@ let allProjects = [gis, classifier];
 for (let i = 0; i < allProjects.length; i++) {
     let project = allProjects[i];
 
-    project.open.addEventListener('click', function () {
+    project.open1.addEventListener('click', function () {
         // Open the modal window when 'open' is clicked
+        project.modal.className = "modal";
+    });
+
+    project.open2.addEventListener('click', function () {
+        // Open the modal window when the image is clicked
+        project.modal.className = "modal";
+    });
+
+    project.open3.addEventListener('click', function () {
+        // Open the modal window when the title is clicked
         project.modal.className = "modal";
     });
 
@@ -131,4 +145,12 @@ function nextPage(project) {
     
 }
 
-// Add an event listener to set the correct number of "total pages" for each project demo
+// Create event listeners for external links
+document.getElementById("PathfinderDemoT").addEventListener('click', function () {
+    // Open the link for the pthfinder project
+    window.open("https://austin-t.github.io/Pathfinder/");
+});
+document.getElementById("PathfinderDemoI").addEventListener('click', function () {
+    // Open the link for the pthfinder project
+    window.open("https://austin-t.github.io/Pathfinder/");
+});

@@ -78,8 +78,8 @@ const brainWidth = 50;
 let radius = 200;
 
 let origin = {
-    x: 300,
-    y: 300,
+    x: 265,
+    y: 285,
     z: 0
 }
 

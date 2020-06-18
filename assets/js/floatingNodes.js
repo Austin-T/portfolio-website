@@ -13,10 +13,11 @@
     fadeInRate: 0.06,
     fadeOutRate: 0.03,
     frameInterval: 20,
-    background: ['black', 'rgb(15, 15, 15)'],
+    // background: ['black', 'rgb(15, 15, 15)'],
+    background: ['rgb(30, 30, 30)', 'rgb(30, 30, 30)'],
     gradient: 'radial',
-    nodeColor: '#8ebebc',
-    edgeColor: '#b4b4b4',
+    nodeColor: '#fff',
+    edgeColor: '#fff',
     edgeSize: 0.7,
     nodeSize: 500
   };
