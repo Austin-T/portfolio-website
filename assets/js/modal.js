@@ -13,6 +13,16 @@ let ClassifierContent = [
     ["./images/testgif.gif", "A full demo will be available soon"]
 ];
 
+// Outline the content to be added to the Twitter Analytics Tool window
+let AnalystContent = [
+    ["./images/metaAnalyst.gif", "View user data that is not visible when browsing twitter on the internet."],
+    ["./images/audienceAnalyst.gif", "See how your audience is tweeting about your brand: a deep learning model is used to conduct sentiment analysis on the most recent tweets that are mentioning your name."],
+    ["./images/engagementAnalyst.gif", "View the total amount of favourites and retweets that your account is recieving on a daily basis. Evaluate your performance over time."],
+    ["./images/hashtagAnalyst.gif", "Observe the correlation between the hashtags you are using, and the level of engagement that twitter users have with the associated posts."],
+    ["./images/tweetsAnalyst.gif", "See your top performing tweets from the last month. For each tweet, sentiment analysis is conducted on it's responses, and the level of positive feedback is displayed. Also, check out your likes and retweets."],
+    ["./images/sortAnalyst.gif", "Organize your top tweets based on likes, retweets, or feedback."],
+];
+
 // The GIS Data Hub Modal Popup Window
 let gis = {
     open1: document.getElementById("GISDemo"),
@@ -45,7 +55,23 @@ let classifier = {
     totalPages: ClassifierContent.length
 }
 
-let allProjects = [gis, classifier];
+// The Twitter Analytics Tool Popup Window
+let analyst = {
+    open1: document.getElementById("AnalystDemo"),
+    open2: document.getElementById("AnalystDemoI"),
+    open3: document.getElementById("AnalystDemoT"),
+    close: document.getElementById("exitAnalyst"),
+    page: document.getElementById("pageAnalyst"),
+    previous: document.getElementById("previousAnalyst"),
+    next: document.getElementById("nextAnalyst"),
+    modal: document.getElementById("modalAnalyst"),
+    text: document.getElementById("textAnalyst"),
+    image: document.getElementById("imageAnalyst"),
+    content: AnalystContent,
+    totalPages: AnalystContent.length
+}
+
+let allProjects = [gis, classifier, analyst];
 
 for (let i = 0; i < allProjects.length; i++) {
     let project = allProjects[i];
