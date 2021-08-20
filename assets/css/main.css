@@ -2406,7 +2406,7 @@ input, select, textarea {
 	#footer {
 		margin-left: 50px;
 		text-align: center;
-		background-color: rgb(25, 25, 25);
+		background-color: rgb(10, 10, 10);
 		/* padding: 2px 0 2px 0; */
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 8pt;
@@ -2450,7 +2450,7 @@ input, select, textarea {
 		height: 100vh;
 		z-index: -1;
 		/* background-color: rgb(25, 25, 25); */
-		background-color: rgb(25, 25, 25);
+		background-color: rgba(25, 25, 25, 0.9);
 		transform: translateY(100%);
 		transform: translateX(-100%);
 		transition: all 1s ease-out;
@@ -2748,8 +2748,8 @@ input, select, textarea {
 			/* Contact Page */
 			#main > section.four {
 				/* background-color: rgba(39, 43, 42, 0.75); */
-				padding: 2em 0 2em 0;
-				height: 70vh;
+				padding: 10em 0 2em 0;
+				height: 90vh;
 			}
 
 			#main > section.four p {
@@ -2950,7 +2950,7 @@ input, select, textarea {
 			left: 10vw;
 		}
 		#main > section.three {
-			height: 160vh;
+			height: 220vh;
 		}
 		.skillsText {
 			width: 100%;
@@ -3212,7 +3212,10 @@ input, select, textarea {
 				height: 400px;
 			}
 			#main > section.three {
-				height: 160vh;
+				height: 220vh;
+			}
+			#profilePic {
+				display: None
 			}
 			.skillsText {
 				width: 100%;
@@ -3308,7 +3311,10 @@ input, select, textarea {
 			height: 300px;
 		}
 		#main > section.three {
-			height: 85vh;
+			height: 220vh;
+		}
+		#profilePic {
+			display: None
 		}
 		.skillsText {
 			width: 100%;
@@ -3426,7 +3432,10 @@ input, select, textarea {
 				height: 200px;
 			}
 			#main > section.three {
-				height: 85vh;
+				height: 220vh;
+			}
+			#profilePic {
+				display: None
 			}
 			.skillsText {
 				width: 100%;
@@ -3464,6 +3473,9 @@ input, select, textarea {
 
 	@media screen and (max-width: 536px) and (max-height: 800px) {
 		#main > section.three {
-			height: 150vh;
+			height: 220vh;
+		}
+		#profilePic {
+			display: None
 		}
 	}
