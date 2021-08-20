@@ -2461,6 +2461,37 @@ input, select, textarea {
 		transform: translateX(0);
 	}
 
+	.arrow {
+		position: absolute;
+		top: 70vh;
+		left: 50vw;
+		z-index: 1;
+		text-align: center;
+		margin: 8% 0;
+	}
+	.arrow.fade-out {
+		transform: translateY(100%);
+		transform: translateX(0);
+		display: none;
+	}
+	.bounce {
+		-moz-animation: bounce 2s infinite;
+		-webkit-animation: bounce 2s infinite;
+		animation: bounce 2s infinite;
+	  }
+	  
+	  @keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+		  transform: translateY(0);
+		}
+		40% {
+		  transform: translateY(-30px);
+		}
+		60% {
+		  transform: translateY(-15px);
+		}
+	  }
+
 /* Main */
 
 	#main {
