@@ -15,7 +15,7 @@ let ClassifierContent = [
 
 // Outline the content to be added to the Twitter Analytics Tool window
 let AnalystContent = [
-    ["./images/metaAnalyst.gif", "View user data that is not visible when browsing twitter on the internet."],
+    ["./images/metaAnalyst.gif", "View high-level account information on your targeted twitter page."],
     ["./images/audienceAnalyst.gif", "See how your audience is tweeting about your brand: a deep learning model is used to conduct sentiment analysis on the most recent tweets that are mentioning your name."],
     ["./images/engagementAnalyst.gif", "View the total amount of favourites and retweets that your account is recieving on a daily basis. Evaluate your performance over time."],
     ["./images/hashtagAnalyst.gif", "Observe the correlation between the hashtags you are using, and the level of engagement that twitter users have with the associated posts."],
