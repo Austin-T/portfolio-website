@@ -234,7 +234,7 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		padding: 0 8em 0 8em;
+		padding: 0 4em 0 4em;
 		/* max-width: 100%;
 		width: 1400px; */
 		width: 100%;
@@ -295,6 +295,22 @@ input, select, textarea {
 		/* width: 800px; */
 		/* transform: translateY(70%); */
 	}
+
+    .center-vh {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+    }
+
+    .gray {
+      color: gray;
+    }
 
 	.extra-padding {
 		padding: 0 16em 0 16em;
@@ -1855,29 +1871,29 @@ input, select, textarea {
 
 /* Icons */
 
+    .icon {
+        font-size: 40px;
+    }
+
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+        margin: 0;
+        padding: 0;
 	}
 
 		ul.icons li {
 			display: inline-block;
-			padding-left: 0;
+			margin: 20px;
+            
 		}
 
 		ul.icons a {
 			display: inline-block;
-			width: 2em;
-			height: 2em;
-			line-height: 2em;
 			text-align: center;
 			border: 0;
 		}
 
-		ul.icons li a {
-			width: 1.75em;
-		}
 
 /* Form */
 
@@ -2450,16 +2466,14 @@ input, select, textarea {
 		height: 100vh;
 		z-index: -1;
 		/* background-color: rgb(25, 25, 25); */
-		background-color: rgba(25, 25, 25, 0.9);
-		transform: translateY(100%);
-		transform: translateX(-100%);
+		background-color: rgba(25, 25, 25, 0.8);
 		transition: all 1s ease-out;
 	}
 
-	.coverMe.fade-in {
+	/*.coverMe.fade-in {
 		transform: translateY(0);
 		transform: translateX(0);
-	}
+	}*/
 
 	.arrow {
 		position: absolute;
