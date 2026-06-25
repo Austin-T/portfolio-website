@@ -6,9 +6,43 @@
         <link rel="icon" href="images/ATLogo.png" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Austin Tralnberg is a Canadian Software Engineer with a background in information retrieval, machine learning, and robotics. Find out more!"/>
+		<meta name="description" content="Austin Tralnberg is a Canadian software engineer with a background in information retrieval, machine learning, and robotics. Find out more!"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Lato&display=swap" rel="stylesheet">
+		<style>
+/* Keep icons in a single horizontal row and prevent wrapping */
+.icons {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  padding: 0;
+  list-style: none;
+}
+
+/* Ensure list items do not shrink or break lines */
+.icons li {
+  white-space: nowrap !important;
+  display: inline-block;
+}
+
+/* Make text and icons scale dynamically based on screen width */
+.center-vh {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem) !important;
+}
+
+/* Ensure SVG icon scales relative to the shrinking font size */
+.icons svg {
+  width: 1em !important;
+  height: 1em !important;
+}
+
+/* Adds a subtle dark shadow to make the text pop against dark or busy backgrounds */
+.center-vh p.gray {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+		</style>
 	</head>
 
 		<!-- Background -->
@@ -22,7 +56,7 @@
 					<section id="top" class="one dark cover">
 						
 						<div class="center-vh">
-                            <p class="gray">Hi! I'm <b style="color: #fffcfc;">Austin Tralnberg</b>, a software engineer with a passion for building at the bleeding edge of artificial intelligence. Learn more about me from my LinkedIn, GitHub, or Substack.
+                            <p class="gray">Hi! I'm <b style="color: #d4d4d4;">Austin Tralnberg</b>, a software engineer with a passion for building at the bleeding edge of AI. Learn more about me on my LinkedIn, GitHub, or Substack.
                             </p>
                             <br/>
                             <ul class="icons">
